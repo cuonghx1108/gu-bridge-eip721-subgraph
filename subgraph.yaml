@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ERC721TokenFactory
-    network: gu_sandbox
+    network: goerli
     source:
       address: "0x23e25531f8D4181d054aA6934Ce67DaFeFAcc7fb"
       abi: ERC721TokenFactory
-      startBlock: 7427397
+      startBlock: 7725579
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -35,7 +35,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: ERC721NativeToken
-    network: gu_sandbox
+    network: goerli
     source:
       abi: ERC721NativeToken
     mapping:
@@ -59,7 +59,7 @@ templates:
           handler: handleTransfer
   - kind: ethereum/contract
     name: ERC721BridgeToken
-    network: gu_sandbox
+    network: goerli
     source:
       abi: ERC721BridgeToken
     mapping:

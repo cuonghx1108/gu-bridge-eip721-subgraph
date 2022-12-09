@@ -6,9 +6,12 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
+    "prepare-gusandbox": "mustache config/gusandbox.json subgraph.template.yaml > subgraph.yaml",
+    "prepare-goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml",
     "create": "graph create cuonghx/gu-bridge-eip721 --node http://34.84.183.81:8020",
     "deploy": "graph deploy cuonghx/gu-bridge-eip721 --ipfs https://api.thegraph.com/ipfs/ --node http://34.84.183.81:8020",
-    "remove": "graph remove cuonghx/gu-bridge-eip721 --node http://34.84.183.81:8020"
+    "remove": "graph remove cuonghx/gu-bridge-eip721 --node http://34.84.183.81:8020",
+    "deploy-goerli": "graph deploy --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug --access-token f3862233d5a74dcf8c20028b29b37a33 cuonghx1108/gu-bridge-eip721"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
   "homepage": "https://github.com/cuonghx1108/gu-bridge-eip721#readme",
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",
-    "@graphprotocol/graph-ts": "^0.18.1"
+    "@graphprotocol/graph-ts": "^0.18.1",
+    "mustache": "^4.2.0"
   }
 }

@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ERC721TokenFactory
-    network: { { network } }
+    network: {{network}}
     source:
-      address: { { address } }
+      address: "{{address}}"
       abi: ERC721TokenFactory
-      startBlock: { { startBlock } }
+      startBlock: {{startBlock}}
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -35,7 +35,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: ERC721NativeToken
-    network: { { network } }
+    network: {{network}}
     source:
       abi: ERC721NativeToken
     mapping:
@@ -59,7 +59,7 @@ templates:
           handler: handleTransfer
   - kind: ethereum/contract
     name: ERC721BridgeToken
-    network: { { network } }
+    network: {{network}}
     source:
       abi: ERC721BridgeToken
     mapping:
