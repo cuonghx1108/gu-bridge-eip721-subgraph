@@ -1,0 +1,28 @@
+{
+  "name": "gu-bridge-eip721",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "create": "graph create cuonghx/gu-bridge-eip721 --node http://34.84.183.81:8020",
+    "deploy": "graph deploy cuonghx/gu-bridge-eip721 --ipfs https://api.thegraph.com/ipfs/ --node http://34.84.183.81:8020",
+    "remove": "graph remove cuonghx/gu-bridge-eip721 --node http://34.84.183.81:8020"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuonghx1108/gu-bridge-eip721.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuonghx1108/gu-bridge-eip721/issues"
+  },
+  "homepage": "https://github.com/cuonghx1108/gu-bridge-eip721#readme",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.18.1"
+  }
+}
